@@ -15,6 +15,7 @@ public interface LembreteController {
 
     @PostMapping("/lembretes")
     public ResponseEntity<LembreteOut> create(
+        @RequestHeader(required = true, name = "id-user") String UserId,
         @RequestBody(required = true) LembreteIn in
     );
 
