@@ -10,7 +10,6 @@ import lombok.experimental.Accessors;
 public record LembreteIn (
     String title,
     String description,
-    String idUser,
     Date inicio,
     Date fim
 ) {
