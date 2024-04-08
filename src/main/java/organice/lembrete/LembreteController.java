@@ -29,4 +29,8 @@ public interface LembreteController {
     public ResponseEntity<LembreteOut> read(
         @RequestHeader(required = true, name = "id-lembrete") String idLembrete
     );
+
+
+    @GetMapping("/lembretes/teste")
+    public ResponseEntity<String> read_teste();
 } 
