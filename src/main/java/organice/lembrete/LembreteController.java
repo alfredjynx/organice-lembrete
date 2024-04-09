@@ -1,5 +1,8 @@
 package organice.lembrete;
 
+import java.util.Date;
+import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +20,12 @@ public interface LembreteController {
     public ResponseEntity<LembreteOut> create(
         @RequestHeader(required = true, name = "id-user") String UserId,
         @RequestBody(required = true) LembreteIn in
+    );
+
+    @GetMapping("/lembretes/data")
+    public ResponseEntity<List<LembreteOut>> getByDate(
+        @RequestHeader(required = true, name = "id-user") String UserId,
+        @RequestBody(required = true) LembreteDateIn data
     );
 
     @PutMapping("/lembretes/{id}")
