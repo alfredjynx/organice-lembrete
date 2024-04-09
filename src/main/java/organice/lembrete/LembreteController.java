@@ -22,7 +22,7 @@ public interface LembreteController {
         @RequestBody(required = true) LembreteIn in
     );
 
-    @GetMapping("/lembretes/data")
+    @PostMapping("/lembretes/data")
     public ResponseEntity<List<LembreteOut>> getByDate(
         @RequestHeader(required = true, name = "id-user") String UserId,
         @RequestBody(required = true) LembreteDateIn data
