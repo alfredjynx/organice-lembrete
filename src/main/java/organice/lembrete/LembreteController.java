@@ -1,6 +1,5 @@
 package organice.lembrete;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.cloud.openfeign.FeignClient;
@@ -34,9 +33,9 @@ public interface LembreteController {
         @RequestBody(required = true) LembreteIn in
     );
 
-    @GetMapping("/lembretes")
+    @GetMapping("/lembretes/{id}")
     public ResponseEntity<LembreteOut> read(
-        @RequestHeader(required = true, name = "id-lembrete") String idLembrete
+        @PathVariable(required = true) String idLembrete
     );
 
 
