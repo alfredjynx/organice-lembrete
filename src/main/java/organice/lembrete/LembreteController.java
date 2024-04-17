@@ -34,9 +34,9 @@ public interface LembreteController {
         @RequestBody(required = true) LembreteIn in
     );
 
-    @GetMapping("/lembretes")
+    @GetMapping("/lembretes/{id}")
     public ResponseEntity<LembreteOut> read(
-        @RequestHeader(required = true, name = "id-lembrete") String idLembrete
+        @PathVariable("id") String idLembrete
     );
 
 
