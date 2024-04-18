@@ -36,7 +36,7 @@ public interface LembreteController {
 
     @GetMapping("/lembretes/{id}")
     public ResponseEntity<LembreteOut> read(
-        @PathVariable("id") String idLembrete
+        @PathVariable(required = true) String idLembrete
     );
 
 
