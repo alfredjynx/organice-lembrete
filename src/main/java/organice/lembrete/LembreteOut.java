@@ -1,6 +1,5 @@
 package organice.lembrete;
 
-import java.util.Date;
 
 import lombok.Builder;
 import lombok.experimental.Accessors;
@@ -11,8 +10,8 @@ public record LembreteOut (
     String title,
     String description,
     String id,
-    Date inicio,
-    Date fim
+    String inicio,
+    String fim
 ) {
     
 }
