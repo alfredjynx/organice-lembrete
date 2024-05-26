@@ -1,7 +1,7 @@
-organice\lembrete\LembreteOut$LembreteOutBuilder.class
-organice\lembrete\LembreteController.class
-organice\lembrete\LembreteDateIn$LembreteDateInBuilder.class
-organice\lembrete\LembreteOut.class
-organice\lembrete\LembreteIn.class
-organice\lembrete\LembreteDateIn.class
-organice\lembrete\LembreteIn$LembreteInBuilder.class
+organice/lembrete/LembreteController.class
+organice/lembrete/LembreteDateIn$LembreteDateInBuilder.class
+organice/lembrete/LembreteIn$LembreteInBuilder.class
+organice/lembrete/LembreteOut.class
+organice/lembrete/LembreteDateIn.class
+organice/lembrete/LembreteIn.class
+organice/lembrete/LembreteOut$LembreteOutBuilder.class
